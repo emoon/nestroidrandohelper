@@ -2,14 +2,11 @@
 <head>
   <!--
   CLICKING THE +/- BUTTONS WILL ADD OR SUBTRACT 5 AMMO
-  CLICKING THE BROWN AMMO ICON WILL ADD 1 AMMO
-  THIS IS THE BEST I CAN DO RIGHT NOW!!
-  RIDLEY CALC IS FULLY FUNCTIONAL
-    (AND PROGRAMMED IN MULTIPLE TECHNIQUES)
-  EVERYTHING ELSE IS COMING SOON!
   -->
-  <title>Super Metroid Rando Helper by crossproduct (v 0.4)</title>
+  <title>Metroid 1/Nestroid Rando Helper by Daniel Collin (v 0.1)</title>
 
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="js/util.js"></script>
   <script src="js/template.js"></script>
@@ -31,32 +28,6 @@
           </div>
           <div class="row">
             <div class="cell"><div class="digit-0"></div></div>
-            <div class="cell"><div class="digit-0"></div></div>
-            <div class="cell"><div class="digit-0"></div></div>
-          </div>
-        </div>
-        <div class="cell" id="super-missile">
-          <div class="row">
-            <div class="cell ammo-icon" onClick="inc_ammo('super-missile',1)"></div>
-            <div class="cell inc-dec">
-              <div class="plus" onClick="inc_ammo('super-missile',5)"></div>
-              <div class="minus" onClick="inc_ammo('super-missile',-5)"></div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="cell"><div class="digit-0"></div></div>
-            <div class="cell"><div class="digit-0"></div></div>
-          </div>
-        </div>
-        <div class="cell" id="power-bomb">
-          <div class="row">
-            <div class="cell ammo-icon" onClick="inc_ammo('power-bomb',1)"></div>
-            <div class="cell inc-dec">
-              <div class="plus" onClick="inc_ammo('power-bomb',5)"></div>
-              <div class="minus" onClick="inc_ammo('power-bomb',-5)"></div>
-            </div>
-          </div>
-          <div class="row">
             <div class="cell"><div class="digit-0"></div></div>
             <div class="cell"><div class="digit-0"></div></div>
           </div>
@@ -95,34 +66,6 @@
           <div class="cell"><div class="item" id="speed" onClick="toggle('speed')"></div></div>
         </div>
       </div>
-
-    </div>
-
-    <!--- Buttons to switch the panels on the right side -->
-    <div class="cell" id="menu">
-      <div class="button map active" onClick="toggle_panel(0)"></div>
-      <div class="button ridley" onClick="toggle_panel(1)"></div>
-      <div class="button mbrain" onClick="toggle_panel(2)"></div>
-      <div class="button skill" onClick="toggle_panel(3)"></div>
-      <div class="button option" onClick="toggle_panel(4)"></div>
-    </div>
-
-    <div class="cell" id="panels">
-      <div class="panel map active"></div>
-
-      <!-- RIDLEY CALCULATOR -->
-      <div class="panel ridley">
-        <div class="row" id="ridley-beam">
-          <div class="cell"><div class="digit-0"></div></div>
-          <div class="cell"><div class="digit-0"></div></div>
-        </div>
-        <div id="ridley-strategy"></div>
-        <div id="ridley-note">per hit, up to 2 hits</div>
-      </div>
-
-      <div class="panel mbrain"></div>
-      <div class="panel skill"></div>
-      <div class="panel option"></div>
     </div>
   </div>
 

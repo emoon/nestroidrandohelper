@@ -13,7 +13,7 @@ body {
 .row:after { clear: both; }
 .cell { position: relative; float: left; }
 
-#app { width: 826px; height: 337px; }
+#app { width: 426px; height: 337px; }
 
 #tracker {
   width: 344px;
@@ -113,45 +113,6 @@ body {
 #menu .mbrain.active { background-image: url(images/overlay/button-mbrain-active.png); }
 #menu .skill.active { background-image: url(images/overlay/button-skill-active.png); }
 #menu .option.active { background-image: url(images/overlay/button-option-active.png); }
-
-.panel {
-  width: 344px;
-  height: 337px;
-  position: absolute;
-  color: white;
-  display: none;
-}
-.panel.active { display: block; }
-
-#panels .map { background-color: red; }
-#panels .ridley { background-image: url(images/overlay/ridleymath.png); }
-#panels .mbrain { background-color: green; }
-#panels .skill { background-color: blue; }
-#panels .option { background-color: purple; }
-
-#ridley-beam {
-  width: 64px;
-  height: 28px;
-  position: absolute;
-  top: 113px;
-  left: 46px;
-}
-#ridley-strategy {
-  width: 158px;
-  height: 280px;
-  position: absolute;
-  top: 15;
-  right: 15;
-  font-size: 18px !important;
-  text-align: center;
-}
-#ridley-note {
-  width: 140px;
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-  font-size: 16px !important;
-}
 
 #charge { background-image: url(images/items/charge.png); }
 #ice { background-image: url(images/items/ice.png); }
