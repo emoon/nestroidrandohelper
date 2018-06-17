@@ -5,8 +5,6 @@
 
     window.bosses = {
         kraid: false,
-        phantoon: false,
-        draygon: false,
         ridley: false
     };
 
@@ -16,7 +14,9 @@
 
     window.items = {
         charge: false,
-        ice: false,
+        ice1: false,
+        ice2: false,
+        long_beam: false,
         wave: false,
         spazer: false,
         plasma: false,
@@ -58,15 +58,5 @@
     window.toggle_boss = function(x) {
         bosses[x] = !bosses[x];
         document.getElementById(x).className = bosses[x] ? 'boss defeated' : 'boss';
-    };
-
-    // Procedure for clicking the panel buttons in the menu
-    window.toggle_panel = function(x) {
-        document.querySelectorAll('#menu .button')
-            .forEach(function(each) { each.classList.remove('active'); });
-    };
-
-    window.start = function() {
-        toggle_panel(1);
     };
 }(window));
