@@ -50,6 +50,9 @@ body {
 .item { width: 64px; height: 64px; opacity: .25; }
 .item.active { opacity: 1; }
 
+.etank { width: 32px; height: 32px; opacity: 1; margin: 4px 8px; background-image: url(nes_images/etank_empty.png);  }
+.etank.active { background-image: url(nes_images/etank_filled.png);  }
+
 #beams { margin: 5px 8px 0; }
 #beams.row > .cell + .cell { margin-left: 12px; }
 
@@ -57,22 +60,17 @@ body {
 #upgrades > .row { margin: 4px 0; }
 #upgrades > .row > .cell + .cell { margin-left: 13px; }
 
-#charge { background-image: url(images/items/charge.png); }
+#tank { background-image: url(nes_images/etank_empty.png); }
+
 #ice1 { background-image: url(nes_images/icebeam.png); }
 #ice2 { background-image: url(nes_images/icebeam.png); }
 #long_beam { background-image: url(nes_images/longbeam.png); }
 #wave { background-image: url(nes_images/wavebeam.png); }
-#spazer { background-image: url(images/items/spazer.png); }
-#plasma { background-image: url(images/items/plasma.png); }
 #varia { background-image: url(nes_images/varia.png); }
-#gravity { background-image: url(images/items/gravity.png); }
 #morph { background-image: url(nes_images/morphball_enabled.png); }
 #bombs { background-image: url(nes_images/bombs.png); }
-#spring-ball { background-image: url(images/items/springball.png); }
 #screw { background-image: url(nes_images/screw.png); }
 #hi-jump { background-image: url(nes_images/hijump.png); }
-#space { background-image: url(images/items/space.png); }
-#speed { background-image: url(images/items/speed.png); }
 
 [class*="digit-"] { width: 32px; height: 28px; }
 .digit-0 { background-image: url(images/numbers/0.png); }

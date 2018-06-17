@@ -18,17 +18,19 @@
         ice2: false,
         long_beam: false,
         wave: false,
-        spazer: false,
-        plasma: false,
         varia: false,
-        gravity: false,
         morph: false,
         bombs: false,
-        'spring-ball': false,
         screw: false,
+        tank0: false,
+        tank1: false,
+        tank2: false,
+        tank3: false,
+        tank4: false,
+        tank5: false,
+        tank6: false,
+        tank7: false,
         'hi-jump': false,
-        space: false,
-        speed: false
     };
 
     window.display_ammo = function(type) {
@@ -52,11 +54,25 @@
         document.getElementById(x).className = items[x] ? 'item active' : 'item';
     };
 
+    window.toggle_tank = function(x) {
+        items[x] = !items[x];
+        document.getElementById(x).className = items[x] ? 'etank active' : 'etank';
+    };
+
     function pad(x, n) { return ('' + (1000 + x)).substring(4-n, x.length); }
 
     // Toggles the Golden Statues
     window.toggle_boss = function(x) {
         bosses[x] = !bosses[x];
+
+        if (bosses[x]) {
+        	ammo["missile"] += 75;
+        } else {
+        	ammo["missile"] -= 75;
+        }
+
+        display_ammo("missile");
+
         document.getElementById(x).className = bosses[x] ? 'boss defeated' : 'boss';
     };
 }(window));
