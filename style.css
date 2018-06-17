@@ -17,14 +17,14 @@ body {
 
 #tracker {
   width: 444px;
-  height: 337px;
+  height: 437px;
   padding: 18px;
 }
 
 .inc-dec { padding: 3px 0; }
 .ammo-icon { width: 64px; height: 64px; }
 
-#missile .ammo-icon { width: 96px; background-image: url(images/items/missile.png); }
+#missile .ammo-icon { width: 64px; background-image: url(nes_images/missile.png); }
 
 #kraid {
   width: 96px;
@@ -72,17 +72,17 @@ body {
 #screw { background-image: url(nes_images/screw.png); }
 #hi-jump { background-image: url(nes_images/hijump.png); }
 
-[class*="digit-"] { width: 32px; height: 28px; }
-.digit-0 { background-image: url(images/numbers/0.png); }
-.digit-1 { background-image: url(images/numbers/1.png); }
-.digit-2 { background-image: url(images/numbers/2.png); }
-.digit-3 { background-image: url(images/numbers/3.png); }
-.digit-4 { background-image: url(images/numbers/4.png); }
-.digit-5 { background-image: url(images/numbers/5.png); }
-.digit-6 { background-image: url(images/numbers/6.png); }
-.digit-7 { background-image: url(images/numbers/7.png); }
-.digit-8 { background-image: url(images/numbers/8.png); }
-.digit-9 { background-image: url(images/numbers/9.png); }
-.plus, .minus { width: 20px; height: 28px; }
-.plus { background-image: url(images/numbers/plus.png); }
-.minus { background-image: url(images/numbers/minus.png); }
+[class*="digit-"] { width: 32px; height: 32px; }
+.digit-0 { background-image: url(nes_images/0.png); }
+.digit-1 { background-image: url(nes_images/1.png); }
+.digit-2 { background-image: url(nes_images/2.png); }
+.digit-3 { background-image: url(nes_images/3.png); }
+.digit-4 { background-image: url(nes_images/4.png); }
+.digit-5 { background-image: url(nes_images/5.png); }
+.digit-6 { background-image: url(nes_images/6.png); }
+.digit-7 { background-image: url(nes_images/7.png); }
+.digit-8 { background-image: url(nes_images/8.png); }
+.digit-9 { background-image: url(nes_images/9.png); }
+.plus, .minus { width: 32px; height: 32px; }
+.plus { background-image: url(nes_images/plus.png); }
+.minus { background-image: url(nes_images/minus.png); }
